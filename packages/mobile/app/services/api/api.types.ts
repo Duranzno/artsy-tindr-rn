@@ -1,9 +1,6 @@
 import { GeneralApiProblem } from "./api-problem"
+import { Artist, Artwork } from "../../structures"
 
-export interface User {
-  id: number
-  name: string
-}
-
-export type GetUsersResult = { kind: "ok"; users: User[] } | GeneralApiProblem
-export type GetUserResult = { kind: "ok"; user: User } | GeneralApiProblem
+type GeneralOk<T> = { kind: string; data?: T }
+export type GetArtistResult = GeneralOk<Artist> | GeneralApiProblem
+export type GetArtworksResult = GeneralOk<Artwork[]> | GeneralApiProblem

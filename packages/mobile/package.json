@@ -23,11 +23,20 @@
     "storybook": "start-storybook -p 9001 -c ./storybook",
     "adb": "adb reverse tcp:9090 tcp:9090 && adb reverse tcp:3000 tcp:3000 && adb reverse tcp:9001 tcp:9001 && adb reverse tcp:8081 tcp:8081"
   },
+  "nohoist": [
+    "@react-native-community/**",
+    "react-native",
+    "react-native/**",
+    "react-native**",
+    "@storybook/**"
+  ],
   "dependencies": {
     "@react-native-community/async-storage": "^1.11.0",
     "@react-native-community/masked-view": "0.1.5",
     "@react-navigation/native": "^5.1.5",
+    "@types/chance": "^1.1.0",
     "apisauce": "1.1.1",
+    "chance": "^1.1.6",
     "detox": "^17.1.1",
     "i18n-js": "^3.0.11",
     "lodash.throttle": "4.1.1",

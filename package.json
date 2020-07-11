@@ -1,5 +1,0 @@
-{
-  "name": "artsy-tinder",
-  "private": true,
-  "workspaces": ["packages/*"]
-}
