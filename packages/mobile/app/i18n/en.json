@@ -14,7 +14,7 @@
   },
   "demoScreen": {
     "howTo": "HOW TO",
-    "title": "What’s In This Stack?",
+    "title": "What’s In This Stacasdasdsak?",
     "tagLine": "Congratulations, you’ve got a very advanced React Native app template here.  Take advantage of this boilerplate!",
     "reactotron": "Demo Reactotron",
     "androidReactotronHint": "If this doesn't work, ensure the Reactotron desktop app is running, run adb reverse tcp:9090 tcp:9090 from your terminal, and reload the app.",

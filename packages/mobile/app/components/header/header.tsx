@@ -33,19 +33,20 @@ export const Header: Component<HeaderProps> = props => {
     headerText,
     headerTx,
     style,
+    id,
     titleStyle,
   } = props
   const header = headerText || (headerTx && translate(headerTx)) || ""
 
   return (
-    <View style={{ ...ROOT, ...style }}>
+    <View style={{ ...ROOT, ...style }} testID={id}>
       {leftIcon ? (
         <Button preset="link" onPress={onLeftPress}>
           <Icon icon={leftIcon} />
         </Button>
       ) : (
-        <View style={LEFT} />
-      )}
+          <View style={LEFT} />
+        )}
       <View style={TITLE_MIDDLE}>
         <Text style={{ ...TITLE, ...titleStyle }} text={header} />
       </View>
@@ -54,8 +55,8 @@ export const Header: Component<HeaderProps> = props => {
           <Icon icon={rightIcon} />
         </Button>
       ) : (
-        <View style={RIGHT} />
-      )}
+          <View style={RIGHT} />
+        )}
     </View>
   )
 }

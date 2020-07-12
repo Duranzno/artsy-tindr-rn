@@ -36,7 +36,7 @@ export interface HeaderProps {
    * Container style overrides.
    */
   style?: ViewStyle
-
+  id: string,
   /**
    * Title style overrides.
    */

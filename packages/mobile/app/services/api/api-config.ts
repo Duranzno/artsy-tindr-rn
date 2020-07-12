@@ -1,4 +1,5 @@
-import { API_URL } from 'react-native-dotenv'
+import ENV from "react-native-config";
+
 
 /**
  * The options used to configure the API.
@@ -13,14 +14,14 @@ export interface ApiConfig {
    * Milliseconds before we timeout the request.
    */
   timeout: number,
-  token?:string,
+  token?: string,
 }
 
 /**
  * The default configuration for the app.
  */
 export const DEFAULT_API_CONFIG: ApiConfig = {
-  url: API_URL,
+  url: ENV.API_URL,
   timeout: 10000,
-  
+
 }
