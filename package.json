@@ -7,5 +7,6 @@
   "license": "MIT",
   "devDependencies": {
     "codecov": "^3.7.0"
-  }
+  },
+  "keywords": []
 }
