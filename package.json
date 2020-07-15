@@ -1,0 +1,11 @@
+{
+  "name": "ArtsyTinder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Duranzno/artsy-tindr-rn.git",
+  "author": "Alejandro D <aledurax@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "codecov": "^3.7.0"
+  }
+}

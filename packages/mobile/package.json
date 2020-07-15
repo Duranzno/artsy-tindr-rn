@@ -111,6 +111,12 @@
     ],
     "transformIgnorePatterns": [
       "node_modules/(?!(jest-)?react-native|react-native|@react-navigation|@storybook|@react-native-community)"
+    ],
+    "collectCoverage": true,
+    "coverageDirectory": "coverage",
+    "collectCoverageFrom": [
+      "app/**/*.{ts,tsx,js,jsx}",
+      "!app/**/*.d.ts"
     ]
   },
   "prettier": {
